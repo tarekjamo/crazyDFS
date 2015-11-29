@@ -33,7 +33,7 @@ public class Algorithm {
 
             dictionary.remove(currentLine);
 
-            populateDictionary(dictionary, allCombinations, currentLine, index, end);
+            populateDictionary(dictionary, allCombinations, currentLine, index);
           //  printDictionary();
         }
         return getDictionaryResults(start, end);
@@ -54,7 +54,7 @@ public class Algorithm {
 
     }
 
-    void populateDictionary(    ArrayList<ArrayList<Node>> dictionary ,  ArrayList<ArrayList<Node>> allCombinations,   ArrayList<Node> currentLine , int index, int end ) {
+    void populateDictionary(    ArrayList<ArrayList<Node>> dictionary ,  ArrayList<ArrayList<Node>> allCombinations,   ArrayList<Node> currentLine , int index) {
         for (ArrayList<Node> al : allCombinations) {
             ArrayList<Node> temp = copyArrayList(currentLine) ;
             Node initial = temp.get(index);
