@@ -21,7 +21,9 @@ public class GraphBuilder {
 
     public Graph build()
     {
-        return new Graph(this) ;
+        Graph g = new Graph() ;
+        g.nodes = nodes ;
+        return g;
     }
 
 

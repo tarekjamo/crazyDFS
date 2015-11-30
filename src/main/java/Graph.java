@@ -6,9 +6,7 @@ import java.util.ArrayList;
 public class Graph {
     public ArrayList<Node> nodes ;
 
-    public Graph(GraphBuilder graphBuilder){
-        this.nodes = graphBuilder.nodes ;
-    }
+
 
     public void print(int index){
         System.out.println(index);

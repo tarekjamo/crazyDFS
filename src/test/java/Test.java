@@ -25,10 +25,8 @@ public class Test {
                 .build() ;
         Algorithm a = new Algorithm(graph) ;
         HashSet<String> answers = a.computeAllPathesFromTo(0,6) ;
-        ArrayList<String> al = new ArrayList<String>();
-        for(String s : answers){
+      for(String s : answers){
             System.out.println(s);
-            al.add(s);
         }
         System.out.println();
 
@@ -56,10 +54,8 @@ public class Test {
                 .build() ;
         Algorithm a = new Algorithm(graph) ;
         HashSet<String> answers = a.computeAllPathesFromTo(0,3) ;
-        ArrayList<String> al = new ArrayList<String>();
         for(String s : answers){
             System.out.println(s);
-            al.add(s);
         }
         System.out.println();
 
